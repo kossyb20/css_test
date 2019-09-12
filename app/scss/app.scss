@@ -1,0 +1,127 @@
+// app.scss
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+$warning: #FD916A; 
+$warningStart:#FD6266;
+$error: #D00269;
+$errorStart:#F5515F;
+$success: #30CC71;
+$successStart: #6EECCE;
+$boxmarginleft: 40px;
+$boxborderradius: 10px;
+$boxwidth: 330px;
+$boxheight: 302px; 
+$buttonfont: 24px;
+$buttoncolor: white;
+$buttonborder: none;
+$buttonborderradius: 50px;
+$buttonpadding: 10px 20px;
+$buttonmargintop: 40px;
+$buttonboxshadow: 0px 15px 10px -15px #111; 
+$textcolor: white;
+$fontweight: bold;
+$font-family: 'Nunito', sans-serif;
+
+
+.main-container {
+    
+    float: left;
+    background-color: rgb(240, 240, 240);
+    width: 1178px;
+    height: 425px;
+    margin-top: -15px;
+    margin-left: -20px;
+    
+}
+
+.flex-container{
+    display: flex;
+    padding: 50px;
+}
+
+.text-container{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+.box--success{
+    background-image: linear-gradient(to top right, $successStart, $success);
+    text-align: center;
+    margin-left: $boxmarginleft;
+    border-radius: $boxborderradius;
+    width: $boxwidth;
+    height: $boxheight;
+}
+
+.box--warning{
+    background-image: linear-gradient(to top right, $warningStart, $warning);
+    text-align: center;
+    margin-left: $boxmarginleft;
+    border-radius: $boxborderradius;
+    width: $boxwidth;
+    height: $boxheight;
+
+}
+
+.box--error{
+    background-image: linear-gradient(to top right, $errorStart, $error);
+    text-align: center; 
+    margin-left: $boxmarginleft;
+    border-radius: $boxborderradius;
+    width: $boxwidth;
+    height: $boxheight;
+}
+
+.text__heading{
+    color: $textcolor;
+    font-size: 20px;
+    font-family: $font-family;
+    
+}
+.text__paragraph{
+    font-size: 16px;
+    color: $textcolor;
+    font-family: $font-family;
+}
+
+
+.button--success{
+    text-align: center;
+    font-size: $buttonfont;
+    background-color: white;
+    color: $success;
+    border: $buttonborder;
+    border-radius: $buttonborderradius;
+    padding: $buttonpadding;
+    margin-top: $buttonmargintop;
+    box-shadow: $buttonboxshadow;
+    
+}
+
+.button--warning{
+    text-align: center;
+    font-size: $buttonfont;
+    background-color: white;
+    color: $warning;
+    border: $buttonborder;
+    border-radius: $buttonborderradius;
+    padding: $buttonpadding;
+    margin-top: $buttonmargintop;
+    box-shadow: $buttonboxshadow;
+    
+}
+
+.button--error{
+    text-align: center;
+    font-size: $buttonfont;
+    background-color: white;
+    color: $error;
+    border: $buttonborder;
+    border-radius: $buttonborderradius;
+    padding: $buttonpadding;
+    margin-top: $buttonmargintop;
+    box-shadow: $buttonboxshadow;
+    
+}
